@@ -2,11 +2,21 @@
 
 namespace Modul_3_Task_1
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+            CustomList<int> list = new CustomList<int>();
+            list.Add(0);
+            list.Add(1);
+            list.Add(2);
+            list.Add(3);
+            list.Add(4);
+            list.Remove(0);
+            foreach (var i in list)
+            {
+                Console.WriteLine(i);
+            }
         }
     }
 }
